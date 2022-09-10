@@ -1,0 +1,68 @@
+.formPositionWrapper {
+  position: absolute;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.35);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .formWrapper {
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background: white;
+    border: none;
+
+
+    .eventTitle {
+      box-sizing: border-box;
+      border: none;
+      border-bottom: 1px solid #d6cccc;
+      margin-bottom: 40px;
+      font-size: 16px;
+      outline: unset;
+    }
+
+    .eventBody {
+      box-sizing: border-box;
+      resize: none;
+      height: 100px;
+      outline: unset;
+      border: none;
+      border-bottom: 1px solid #d6cccc;
+      margin-bottom: 40px;
+    }
+
+    .times {
+
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .buttonsWrapper {
+      display: flex;
+      justify-content: flex-end;
+
+      .buttonWrapper {
+        border-radius: 5px;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+
+        &:not(:last-child) {
+          margin-right: 2px;
+        }
+      }
+
+      .remove {
+        color: red;
+        border: 1px solid red;
+      }
+    }
+  }
+}

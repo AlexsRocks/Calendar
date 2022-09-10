@@ -1,0 +1,73 @@
+.header {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .table {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+
+    .day {
+      min-width: 140px;
+      min-height: 80px;
+      color: black;
+      border: 1px solid #e6dede;
+    }
+
+    .weekend {
+      background: #f2f2f2;
+    }
+
+    .today {
+      background: #edf8eb;
+    }
+
+  }
+
+  .create {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    background: #47a4cb;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & span {
+      font-size: 24px;
+      color: white;
+    }
+  }
+
+  .switch {
+    display: flex;
+    max-width: 185px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    .date {
+      width: 160px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .dateSwitch {
+      border: none;
+      background: none;
+      cursor: pointer;
+      height: 20px;
+      width: 20px;
+      padding: 0;
+    }
+  }
+}

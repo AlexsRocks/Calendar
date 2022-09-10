@@ -1,17 +1,44 @@
 .table {
+  max-width: 1440px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(6, 1fr);
 
   .day {
-    min-width: 140px;
     min-height: 80px;
-    color: black;
     border: 1px solid #e6dede;
+    color: rgb(25, 25, 25, 0.5);
+    padding: 5px 10px;
+    justify-content: space-between;
+  }
+
+  .dayHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+
+  .events {
+    display: flex;
+    flex-direction: column;
+
+    .event {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding: 2px 5px;
+      background: #9de0b2;
+      border-radius: 5px;
+    }
+  }
+
+  .mons {
+    color: rgb(25, 25, 25, 1);
   }
 
   .weekend {
     background: #f2f2f2;
+
   }
 
   .today {
